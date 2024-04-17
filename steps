@@ -1,0 +1,10 @@
+1. Open the command prompt or terminal on your PC.
+2. Run the following command to access the Git credential storage:
+      For Windows: git config --system --unset credential.helper
+      For macOS/Linux: git config --global --unset credential.helper
+3. This command removes the credential helper configuration, which is responsible for storing and caching Git credentials on your PC.
+4. Ensure that you have properly configured your new GitHub account on your local machine.
+      git config --global user.name "Your New Username"
+      git config --global user.email "your-new-email@example.com"
+5. After that you can confirm the new credential.
+      git config --list
